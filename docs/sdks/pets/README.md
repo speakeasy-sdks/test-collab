@@ -1,5 +1,5 @@
 # Pets
-(*.Pets*)
+(*Pets*)
 
 ### Available Operations
 
@@ -46,8 +46,10 @@ func main() {
 
 ### Response
 
-**[*operations.CreatePetsResponse](../../models/operations/createpetsresponse.md), error**
-
+**[*operations.CreatePetsResponse](../../pkg/models/operations/createpetsresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |
 
 ## ListPets
 
@@ -92,8 +94,10 @@ func main() {
 
 ### Response
 
-**[*operations.ListPetsResponse](../../models/operations/listpetsresponse.md), error**
-
+**[*operations.ListPetsResponse](../../pkg/models/operations/listpetsresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |
 
 ## ShowPetByID
 
@@ -138,5 +142,7 @@ func main() {
 
 ### Response
 
-**[*operations.ShowPetByIDResponse](../../models/operations/showpetbyidresponse.md), error**
-
+**[*operations.ShowPetByIDResponse](../../pkg/models/operations/showpetbyidresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |
