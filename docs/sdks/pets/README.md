@@ -50,7 +50,7 @@ func main() {
 **[*operations.CreatePetsResponse](../../pkg/models/operations/createpetsresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## ListPets
 
@@ -98,7 +98,7 @@ func main() {
 **[*operations.ListPetsResponse](../../pkg/models/operations/listpetsresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## ShowPetByID
 
@@ -146,4 +146,4 @@ func main() {
 **[*operations.ShowPetByIDResponse](../../pkg/models/operations/showpetbyidresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
