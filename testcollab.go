@@ -116,8 +116,8 @@ func New(opts ...SDKOption) *TestCollab {
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
 			SDKVersion:        "0.3.1",
-			GenVersion:        "2.220.0",
-			UserAgent:         "speakeasy-sdk/go 0.3.1 2.220.0 1.0.0 github.com/speakeasy-sdks/test-collab",
+			GenVersion:        "2.225.2",
+			UserAgent:         "speakeasy-sdk/go 0.3.1 2.225.2 1.0.0 github.com/speakeasy-sdks/test-collab",
 		},
 	}
 	for _, opt := range opts {
