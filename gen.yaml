@@ -1,22 +1,24 @@
 configVersion: 2.0.0
 generation:
-  sdkClassName: test-collab
+  sdkClassName: prove-auth-internal-go
+  maintainOpenAPIOrder: true
   usageSnippets:
     optionalPropertyRendering: withExample
+  useClassNamesForArrayFields: true
   fixes:
     nameResolutionDec2023: false
 go:
-  version: 0.3.2
+  version: 0.0.1
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
   imports:
     option: openapi
     paths:
-      callbacks: pkg/models/callbacks
-      errors: pkg/models/sdkerrors
-      operations: pkg/models/operations
-      shared: pkg/models/shared
-      webhooks: pkg/models/webhooks
+      callbacks: models/callbacks
+      errors: models/sdkerrors
+      operations: models/operations
+      shared: models/components
+      webhooks: models/webhooks
   inputModelSuffix: input
   maxMethodParams: 4
   outputModelSuffix: output
