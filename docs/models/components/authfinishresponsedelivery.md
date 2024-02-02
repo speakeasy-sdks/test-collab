@@ -1,0 +1,9 @@
+# AuthFinishResponseDelivery
+
+
+## Fields
+
+| Field                                                                                                   | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `Push`                                                                                                  | [*components.AuthFinishResponsePushDelivery](../../models/components/authfinishresponsepushdelivery.md) | :heavy_minus_sign:                                                                                      | N/A                                                                                                     |
+| `Scan`                                                                                                  | [*components.AuthFinishResponseScanDelivery](../../models/components/authfinishresponsescandelivery.md) | :heavy_minus_sign:                                                                                      | N/A                                                                                                     |
