@@ -5,8 +5,8 @@ management:
   docVersion: 1.37.3
   speakeasyVersion: internal
   generationVersion: 2.248.6
-  releaseVersion: 0.0.1
-  configChecksum: 59278d7ff13d2971d9d0d3315b337b3a
+  releaseVersion: 0.1.0
+  configChecksum: fb83ec8bcbec51a4e8ab2f02edbe64da
   repoURL: https://github.com/speakeasy-sdks/test-collab.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test-collab
@@ -21,7 +21,7 @@ generatedFiles:
   - auth.go
   - device.go
   - push.go
-  - proveauthinternalgo.go
+  - proveapi.go
   - go.mod
   - go.sum
   - models/sdkerrors/sdkerror.go
@@ -200,5 +200,9 @@ generatedFiles:
   - docs/models/components/userunbindrequest.md
   - docs/models/components/security.md
   - docs/models/sdkerrors/error.md
+  - docs/sdks/proveapi/README.md
+  - docs/sdks/auth/README.md
+  - docs/sdks/device/README.md
+  - docs/sdks/push/README.md
   - USAGE.md
   - .gitattributes
