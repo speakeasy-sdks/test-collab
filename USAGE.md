@@ -18,13 +18,7 @@ func main() {
 	res, err := s.Auth.AuthContinueRequest(ctx, &components.AuthContinueRequest{
 		AuthID:    "713189b8-5555-4b08-83ba-75d08780aebd",
 		RequestID: testcollab.String("eba12f3a-5555-47bc-b85d-21c0cbc4b973"),
-		Subjects: components.AuthContinueRequestSubjects{
-			Mobile: &components.AuthContinueRequestSubjectMobile{
-				Claim: &components.AuthContinueRequestSubjectMobileClaim{
-					MobileNumber: "12065550100",
-				},
-			},
-		},
+		Subjects:  components.AuthContinueRequestSubjects{},
 	})
 	if err != nil {
 		log.Fatal(err)

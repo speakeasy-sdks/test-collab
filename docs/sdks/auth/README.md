@@ -37,13 +37,7 @@ func main() {
     res, err := s.Auth.AuthContinueRequest(ctx, &components.AuthContinueRequest{
         AuthID: "713189b8-5555-4b08-83ba-75d08780aebd",
         RequestID: testcollab.String("eba12f3a-5555-47bc-b85d-21c0cbc4b973"),
-        Subjects: components.AuthContinueRequestSubjects{
-            Mobile: &components.AuthContinueRequestSubjectMobile{
-                Claim: &components.AuthContinueRequestSubjectMobileClaim{
-                    MobileNumber: "12065550100",
-                },
-            },
-        },
+        Subjects: components.AuthContinueRequestSubjects{},
     })
     if err != nil {
         log.Fatal(err)
@@ -203,59 +197,8 @@ func main() {
     ctx := context.Background()
     res, err := s.Auth.AuthStartRequest(ctx, &components.AuthStartRequest{
         CallbackURL: testcollab.String("https://example.com/webhook"),
-        Delivery: &components.AuthStartRequestDelivery{
-            Push: components.AuthStartRequestDeliveryPush{
-                Notification: components.AuthStartRequestDeliveryPushNotification{
-                    Body: "Do you want to allow login from this device?",
-                    ConfirmBtn: testcollab.String("Confirm"),
-                    DenyBtn: testcollab.String("Deny"),
-                    OriginatingDevice: testcollab.String("iPhone12"),
-                    OriginatingIP: testcollab.String("198.51.100.10"),
-                    Title: "Confirm Login",
-                },
-            },
-        },
         RequestID: testcollab.String("eba12f3a-5555-47bc-b85d-21c0cbc4b973"),
-        Subjects: components.AuthStartRequestSubjects{
-            Device: &components.AuthStartRequestSubjectDevice{
-                Authenticators: &components.AuthStartRequestSubjectDeviceAuthenticators{
-                    Passive: &components.AuthStartRequestSubjectDeviceAuthenticatorPassive{},
-                },
-            },
-            Mobile: &components.AuthStartRequestSubjectMobile{
-                Authenticators: &components.AuthStartRequestSubjectMobileAuthenticators{
-                    Instant: &components.AuthStartRequestSubjectMobileAuthenticatorInstant{
-                        Consent: &components.AuthStartRequestInstantAuthConsent{
-                            CollectedTimestamp: testcollab.String("2022-02-17T00:00:00Z"),
-                            Description: testcollab.String("Customer Application Name"),
-                            Status: "optedIn",
-                            TransactionID: testcollab.String("eba12f3a-5555-47bc-b85d-21c0cbc4b973"),
-                        },
-                    },
-                    Otp: &components.AuthStartRequestSubjectMobileAuthenticatorOTP{
-                        AllowOtpRetry: testcollab.Bool(true),
-                        MessageText: "Your pin is: ####",
-                    },
-                    Passive: &components.AuthStartRequestSubjectMobileAuthenticatorPassive{
-                        CacheResult: testcollab.Bool(true),
-                        LocalDomain: testcollab.Bool(true),
-                        MaxAge: testcollab.Int64(7776000),
-                    },
-                },
-                Claim: &components.AuthStartRequestSubjectMobileClaim{
-                    MobileNumber: testcollab.String("12065550100"),
-                },
-            },
-            User: &components.AuthStartRequestSubjectUser{
-                Authenticators: components.AuthStartRequestSubjectUserAuthenticators{
-                    Passive: &components.AuthStartRequestSubjectUserAuthenticatorPassive{},
-                    Present: &components.SubjectUserAuthenticatorPresent{},
-                },
-                Claim: components.AuthStartRequestSubjectUserClaim{
-                    UserID: "eba12f3a-5555-47bc-b85d-21c0cbc4b973",
-                },
-            },
-        },
+        Subjects: components.AuthStartRequestSubjects{},
     })
     if err != nil {
         log.Fatal(err)
