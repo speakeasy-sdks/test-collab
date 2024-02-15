@@ -5,6 +5,7 @@ package testcollab
 import (
 	"context"
 	"fmt"
+	"github.com/speakeasy-sdks/test-collab/internal/hooks"
 	"github.com/speakeasy-sdks/test-collab/internal/utils"
 	"github.com/speakeasy-sdks/test-collab/models/components"
 	"net/http"
@@ -51,6 +52,7 @@ type sdkConfiguration struct {
 	GenVersion        string
 	UserAgent         string
 	RetryConfig       *utils.RetryConfig
+	Hooks             *hooks.Hooks
 }
 
 func (c *sdkConfiguration) GetServerDetails() (string, map[string]string) {
@@ -145,14 +147,17 @@ func New(opts ...SDKOption) *Proveapi {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.37.3",
-			SDKVersion:        "0.1.2",
-			GenVersion:        "2.253.0",
-			UserAgent:         "speakeasy-sdk/go 0.1.2 2.253.0 1.37.3 github.com/speakeasy-sdks/test-collab",
+			SDKVersion:        "0.2.0",
+			GenVersion:        "2.258.2",
+			UserAgent:         "speakeasy-sdk/go 0.2.0 2.258.2 1.37.3 github.com/speakeasy-sdks/test-collab",
+			Hooks:             hooks.New(),
 		},
 	}
 	for _, opt := range opts {
 		opt(sdk)
 	}
+
+	sdk.sdkConfiguration.DefaultClient = sdk.sdkConfiguration.Hooks.ClientInit(sdk.sdkConfiguration.DefaultClient)
 
 	// Use WithClient to override the default client if you would like to customize the timeout
 	if sdk.sdkConfiguration.DefaultClient == nil {
