@@ -147,9 +147,9 @@ func New(opts ...SDKOption) *Proveapi {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.37.3",
-			SDKVersion:        "0.2.2",
-			GenVersion:        "2.272.4",
-			UserAgent:         "speakeasy-sdk/go 0.2.2 2.272.4 1.37.3 github.com/speakeasy-sdks/test-collab",
+			SDKVersion:        "0.2.3",
+			GenVersion:        "2.272.7",
+			UserAgent:         "speakeasy-sdk/go 0.2.3 2.272.7 1.37.3 github.com/speakeasy-sdks/test-collab",
 			Hooks:             hooks.New(),
 		},
 	}
