@@ -42,7 +42,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.AuthContinueResponse != nil {
         // handle response
     }
@@ -93,7 +92,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.AuthExchangeResponse != nil {
         // handle response
     }
@@ -146,7 +144,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.AuthFinishResponse != nil {
         // handle response
     }
@@ -203,7 +200,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.AuthStartResponse != nil {
         // handle response
     }

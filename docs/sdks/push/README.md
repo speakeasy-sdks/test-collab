@@ -43,7 +43,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.PushTokenDeleteResponse != nil {
         // handle response
     }
@@ -97,7 +96,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.UserInfoResponse != nil {
         // handle response
     }
@@ -152,7 +150,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.UserMobileActiveResponse != nil {
         // handle response
     }
@@ -206,7 +203,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.UserRemoveResponse != nil {
         // handle response
     }
@@ -261,7 +257,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.UserUnbindResponse != nil {
         // handle response
     }
