@@ -3,10 +3,10 @@ id: b2c79f9a-bf4b-4460-b579-f3922f35697d
 management:
   docChecksum: 9cc79a0531a4d1aef3843f274f15fdb9
   docVersion: 1.37.3
-  speakeasyVersion: 1.204.1
-  generationVersion: 2.279.1
-  releaseVersion: 0.3.0
-  configChecksum: dc62b6a42b58c403886c210a35d6debb
+  speakeasyVersion: 1.207.1
+  generationVersion: 2.280.6
+  releaseVersion: 0.3.1
+  configChecksum: cb58bafe62039869a6d09d53c99de535
   repoURL: https://github.com/speakeasy-sdks/test-collab.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test-collab
@@ -16,7 +16,7 @@ features:
     constsAndDefaults: 0.1.4
     core: 3.4.4
     globalSecurity: 2.82.8
-    globalServerURLs: 2.82.1
+    globalServerURLs: 2.82.2
     responseFormat: 0.1.0
 generatedFiles:
   - auth.go
