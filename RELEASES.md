@@ -129,3 +129,13 @@ Based on:
 - [go v0.3.2] .
 ### Releases
 - [Go v0.3.2] https://github.com/speakeasy-sdks/test-collab/releases/tag/v0.3.2 - .
+
+## 2024-03-27 01:05:47
+### Changes
+Based on:
+- OpenAPI Doc 1.37.3 
+- Speakeasy CLI 1.227.0 (2.291.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.3.3] .
+### Releases
+- [Go v0.3.3] https://github.com/speakeasy-sdks/test-collab/releases/tag/v0.3.3 - .
